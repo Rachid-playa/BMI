@@ -1,0 +1,285 @@
+/*
+Aqua
+#04ECF0
+
+Turquoise
+#04D4F0
+
+Cyan
+#6AF2F0
+
+Blue Grotto
+#059DC0
+*/
+@font-face {
+    font-family: Netflix-Sans;
+    src: url(NetflixSansRegular.ttf);
+    font-family: Netflix-SansBold;
+    src: url(NetflixSansBold.ttf)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Netflix-Sans;
+}
+
+body{
+    background-color: #e2e2e2;
+    height: 100%;
+}
+
+header{
+    padding:0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #04D4F0;
+    border: 1px #04ECF0 solid;
+}
+
+header img{
+    margin: 5px 3px;
+    width: 70px;
+    height: 70px;
+    /* border: red 1px solid; */
+}
+
+header h1{
+    font-family: Netflix-SansBold;
+    position: relative;
+    left: 5px;
+    font-size: 50px;
+    color: #e2e2e2;
+    /* border: red 1px solid; */
+}
+
+main{
+    display: flex;
+    /* align-items: center; */
+    padding: 50px 100px;
+    background-color: #e2e2e2;
+    height: 100%;
+
+}
+
+#btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: green 1px solid; */
+    align-items: center;
+    padding:10px 20px ;
+}
+
+#heart{
+    border-radius: 50%;
+    height: 100px;
+    width: 120px;
+    margin:10px 0;
+    background-color: #e2e2e2;
+    /* border: red 1px solid; */
+} 
+
+.btn{
+    height: 50px;
+    width: 80px;
+    margin:5px 0;
+    border-radius: 50%;
+    font-size: 17px;
+    color: #059DC0;
+    border:1px #059DC0 solid ;
+}
+
+#imperial , #metric{
+    /* height: 100%;  */
+    /* width: 100%;   */
+}
+
+.btn:hover{
+    height: 52px;
+    width: 82px;
+    margin:5px 0;
+    border-radius: 50%;
+    color: #059DC0;
+    border:1px #059DC0 solid;
+    cursor: pointer;
+}
+
+.scales{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    /* border: 1px red solid; */
+  
+}
+
+.scales video{
+    width: 30%;
+    height: 50px;
+    position: relative;
+    left: 260px;
+    /* border: red 1px solid; */
+}
+
+#metric input[type='text']{
+    height: 35px;
+    width: 60%;
+    padding: 3px 5px;
+    font-size: 19px;
+    margin: 5px 0;
+}
+
+#metric input[type='text']:hover{
+    height: 35px;
+    width: 60%;
+    padding: 3px 5px;
+    font-size: 19px;
+    margin: 5px 0;
+    border: 1px #04ECF0 solid;
+}
+
+#imperial input[type='text']{
+    height: 35px;
+    width: 45%;
+    padding: 3px 5px;
+    font-size: 19px;
+    margin: 5px 0;
+}
+
+#imperial input[type='text']:hover{
+    height: 35px;
+    width: 45%;
+    padding: 3px 5px;
+    font-size: 19px;
+    margin: 5px 0;
+    border: #04D4F0 solid 1px;
+}
+
+/* form{
+    /* border: 1px solid yellow; */
+
+
+.result{
+    display: flex;
+    padding-left: 70px;
+    /* border: 1px black solid; */
+}
+
+.result .formicon{
+    position: absolute;
+    left: 520px; 
+    height: 70px;
+    width: 90px;
+}
+
+#metric #go1{
+    height: 45px;
+    width: 60px;
+    margin: 10px 2px;
+    border-radius: 45%;
+    font-size: 20px;
+    color: #059DC0;
+    background-color: #ffffff;
+    border: 1px #04D4F0 solid;
+}
+
+#metric #go1:hover{
+    height: 47px;
+    width: 61px;
+    margin: 9px 2px;
+    border-radius: 45%;
+    font-size: 20px;
+    color: #059DC0;
+    background-color: #ffffff;
+    border: 2px #04D4F0 solid;
+    cursor: pointer;
+}
+
+#imperial #go2{
+    height: 45px;
+    width: 60px;
+    margin: 10px 2px;
+    border-radius: 45%;
+    font-size: 20px;
+    color: #059DC0;
+    background-color: #ffffff;
+    border: 1px #04D4F0 solid;
+}
+
+#imperial #go2:hover{
+    height: 47px;
+    width: 61px;
+    margin: 9px 2px;
+    border-radius: 45%;
+    font-size: 20px;
+    color: #059DC0;
+    background-color: #ffffff;
+    border: 2px #04D4F0 solid;
+    cursor: pointer;
+}
+
+main .results{
+    padding-left: 20px;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    color: #000;
+    /* border: green solid 1px; */
+}
+
+#bmi-info{
+    display: grid;
+    background-color: #ffffff;
+    /* height: 100%; */
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    /* border: solid 1px red; */
+}
+
+#bmi-info #info{
+    height: fit-content;
+    /* border: 1px green solid; */
+}
+
+#bmi-info h2{
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin:5px 10px;
+}
+
+#bmi-info #info-icons{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid yellow; */
+}
+
+#bmi-info #info-icons video{
+    height: 70px;
+    width: 100px;
+    /* border: solid 1px red */
+}
+
+
+
+.strip{
+    width: 100%;
+    height: 2px;
+    margin: 3px 5px;
+    background-color: #04ECF0;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 5px 0;
+    background-color: #04D4F0;
+    color: #e2e2e2;
+    text-align: center;
+    /* border: 1px red solid; */
+}

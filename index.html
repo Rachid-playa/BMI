@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BMI Calculator</title>     
+</head>
+<body>
+    <Header>
+        <img src="images/bmi.png" alt="">
+        <h1>CALCULATOR</h1>
+    </Header>
+
+<main>
+    <div id="btns">
+        <video id="heart" src="images/heartbeat.mp4" loop></video>
+        <button id="metricbtn" class="btn">Metric</button>
+        <button id="imperialbtn" class="btn">Imperial</button>
+    </div>
+    <div id="bmi-calc">
+        <div id="metric" class="scales">
+            <video class="calc" src="images/calculator.mp4"autoplay  loop></video>
+            <div class="strip"></div>
+            <form action="">
+                <input type="text" placeholder="Height(cm)" id="cm"><br>
+                <input type="text" placeholder="Weight(kg)" id="kg"><br>
+            </form>
+            <div class="result">
+                <button class="metric" class="go" id="go1">GO</button>
+                <video class="formicon" src="images/connection.mp4" autoplay loop></video> 
+            </div>
+            <div class="strip" id="hide1"></div>
+            <p class="results"></p>
+            <div class="strip"></div>
+            </div> 
+        </div>
+        <div id="imperial" class="scales">
+            <video class="calc" src="images/calculator.mp4"autoplay  loop></video>
+            <div class="strip"></div>
+            <form action="">
+                <input type="text" placeholder="Height(feet)" id="feet"> <input type="text" placeholder="height(inches)" id="inches"><br>
+                <input type="text" placeholder="Weight(pounds)" id="pounds"><br>                         
+            </form>
+                <div class="result">
+                    <button class="imperial" class="go" id="go2">GO</button>
+                    <video class="formicon" src="images/connection.mp4" autoplay loop></video> 
+                </div>
+                <div class="strip" id="hide2"></div>
+                <p class="results"></p>
+            <div class="strip"></div>
+        </div>
+    </div>
+
+    <div id="bmi-info">
+        <div id="info">
+            <h2>Obeise: > 30</h2>
+            <h2>Over wieght: 25 - 29.9</h2>
+            <h2>Normal weight: 18.5 - 24.9 </h2>
+            <h2>Under weight: < 18.5 </h2>
+        </div>
+        <div class="strip"></div>
+        <div id="info-icons">
+            <video class="info-icon" src="images/man.mp4" autoplay loop></video>
+            <video class="info-icon"  src="images/woman.mp4" autoplay loop></video>
+        </div>
+    </div>
+</main>
+
+    <footer>
+       <p>BMI Kenya</p> 
+        <p>BMI Project :A TK Original &copy; 2020 || Made with experties. Only good vibes and inshallah!&#128147;</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
